@@ -1,0 +1,30 @@
+:root{--red:#ff3838;--dark:#101010;--panel:#191919;--muted:#aaa;--border:#303030}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}
+    body{margin:0;background:var(--dark);color:#fff;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--red);outline-offset:5px}
+    .container{width:min(1120px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#101010f5;border-bottom:1px solid var(--border)}
+    nav{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{font-size:23px;font-weight:900;letter-spacing:-1px}.logo span{color:var(--red)}
+    .nav-links{display:flex;align-items:center;gap:25px;font-size:14px}.nav-links a:hover{color:var(--red)}
+    .button{display:inline-block;padding:13px 23px;border-radius:7px;background:var(--red);font-weight:700;color:white;transition:transform .2s,background .2s}
+    .button:hover{background:#df2424;transform:translateY(-2px)}.button.secondary{background:transparent;border:1px solid #555}
+    .hero{padding:100px 0 85px;display:grid;grid-template-columns:1.2fr 1fr;gap:70px;align-items:center}
+    .eyebrow{color:var(--red);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+    h1{font-size:clamp(42px,5.5vw,72px);line-height:1.08;letter-spacing:-3px;margin:22px 0}
+    h1 span{color:var(--red)}.hero p{color:var(--muted);max-width:490px;font-size:17px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+    .visual{position:relative;border:1px solid #4b2525;background:radial-gradient(ellipse at top right,#552020,transparent 70%),var(--panel);padding:30px;border-radius:20px;box-shadow:0 20px 80px #ff38380a}
+    .visual-top{display:flex;justify-content:space-between;color:#ccc;font-size:12px}.status{color:#ff7777}.visual h2{font-size:32px;line-height:1.2;margin:35px 0 12px;letter-spacing:-1px}
+    .bars{height:140px;display:flex;align-items:flex-end;gap:12px;margin:25px 0}.bars i{flex:1;background:linear-gradient(#ff6464,#a72121);border-radius:5px 5px 0 0}
+    .visual-bottom{border-top:1px solid #ffffff20;padding-top:18px;font-size:12px;color:#bbb}.visual-bottom strong{color:#fff}
+    .strip{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:20px 0;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#bbb;font-size:13px;letter-spacing:1px}
+    section{padding:80px 0}h2{font-size:clamp(29px,4vw,43px);line-height:1.2;letter-spacing:-1px;margin:14px 0 20px}.intro{max-width:590px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:35px}.card{background:var(--panel);padding:28px 23px;border:1px solid var(--border);border-radius:12px}.card:hover{border-color:var(--red)}
+    .number{color:var(--red);font-weight:bold;font-size:13px}.card h3{font-size:20px;margin:22px 0 10px}.card p{color:var(--muted);font-size:14px;margin:0}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:start;border-top:1px solid var(--border)}.about p{color:var(--muted)}
+    .steps{display:grid;gap:22px}.step{display:flex;gap:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}.step h3{margin:0 0 6px;font-size:18px}.step p{margin:0;font-size:14px}
+    .contact{background:#201313;border:1px solid #4b2525;border-radius:18px;padding:50px;display:flex;justify-content:space-between;align-items:center;gap:30px;margin-bottom:75px}.contact h2{margin-top:0}.contact p{color:#c5aaaa;margin-bottom:0}.contact .button{white-space:nowrap}
+    footer{padding:28px 0;border-top:1px solid var(--border);color:var(--muted);font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:900px){.hero{gap:35px}.grid{grid-template-columns:repeat(2,1fr)}.about{gap:35px}.nav-links{gap:15px}}
+    @media(max-width:650px){nav{padding:15px 0;flex-wrap:wrap;gap:12px}.nav-links{width:100%;justify-content:space-between;font-size:12px}.nav-links .button{padding:8px 12px}.hero{grid-template-columns:1fr;padding:60px 0;gap:40px}h1{letter-spacing:-2px}.grid,.about{grid-template-columns:1fr}section{padding:55px 0}.contact{padding:30px;display:block;margin-bottom:50px}.contact .button{margin-top:25px}.strip{font-size:11px;gap:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
